@@ -13,7 +13,21 @@ Since there was no suitable pre-existing dataset for emotion detection, I compil
 
 OpenCV Data Collection Script: 
 
-1. Use openCV face detection 
+1. Used the dlib's pretrained model to detect the face and apply face cropping in the video.
+If a face exists in the video:
+2. Start recording and record until 22 frames of the cropped face are collected. Once the 22 frames are collected preprocessing is applied.
+Preprocessing Steps:
+1. Edge Detection: Applies the Canny edge detector.
+2. Gaussian Blurring: Blurs the edges to reduce noise.
+3. Random Cropping: Crops a random portion of the blurred image.
+4. Gray-Scaling: Converts the image to grayscale.
+
+- Preprocessing steps were applied through literature search using the following link: https://arxiv.org/pdf/2202.00102
+
+Video Writing: 
+Saves processed frames to a new video file using cv2.VideoWriter.
+
+
 
 
 
