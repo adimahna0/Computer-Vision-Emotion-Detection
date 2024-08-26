@@ -11,8 +11,8 @@ The data can be found in the `/Output Collected/` folder. Since there was no sui
 ## OpenCV Data Collection Script
 
 The script uses dlib's pretrained model to detect faces and apply face cropping in the video. If a face exists in the video:
-- Start recording and continue until 22 frames of the cropped face are collected.
-- Once the 22 frames are collected, preprocessing is applied. 
+- Start recording and continue until 30 frames of the cropped face are collected.
+- Once the 30 frames are collected, preprocessing is applied. 
 
 ### Preprocessing Steps
 - **Edge Detection:** Applies the Canny edge detector.
