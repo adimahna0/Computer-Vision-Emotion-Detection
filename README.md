@@ -25,5 +25,7 @@ Preprocessing steps were applied through literature search using the following l
 ### Video Writing
 - Saves processed frames to a new video file using `cv2.VideoWriter`.
 
+Full write-up is in the 'Write Up Emotion Recognition Project - Aditya Mahna' pdf file. 
+
 
 
